@@ -1,0 +1,19 @@
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+.imgContainer > img {
+  width: 100%;
+  max-width: 593px;
+  overflow: hidden;
+}
+
+@media (max-width: 945px) {
+  .imgContainer > img {
+    width: 100%;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,26 @@
+.background {
+  background-color: #212529;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 988px;
+  max-width: 100%;
+  height: 593px;
+  gap: 48px;
+  padding: 0 20px;
+}
+
+@media (max-width: 945px) {
+  .contentContainer {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+}

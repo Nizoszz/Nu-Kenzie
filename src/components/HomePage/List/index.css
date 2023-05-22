@@ -1,0 +1,105 @@
+* {
+  list-style: none;
+}
+
+.listBox {
+  width: 100%;
+  max-height: 627px;
+  gap: 24px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.resumeFilterBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resumeFilterBox > span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  height: 30px;
+
+  align-self: center;
+
+  color: #212529;
+}
+
+.resumeFilterBox > ul {
+  display: flex;
+  gap: 16px;
+}
+
+.resumeFilterBox > ul > li > button {
+  background-color: #e9ecef;
+  color: #868e96;
+
+  outline: none;
+
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  padding: 10px 15px;
+
+  text-align: center;
+}
+.resumeFilterBox > ul > li > button:hover {
+  background-color: #868e96;
+  color: #e9ecef;
+  cursor: pointer;
+}
+
+.resumeFilterBox > ul > li > button:focus {
+  background-color: #fd377e;
+  color: #ffffff;
+}
+
+.listBox > span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.contentRecipeList {
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+
+  gap: 32px;
+}
+
+.contentRecipeList::-webkit-scrollbar {
+  appearance: none;
+  width: 0;
+}
+@media (max-width: 945px) {
+  .sectionList {
+    width: 100%;
+  }
+
+  .sectionValues {
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .resumeFilterBox {
+    width: 100%;
+  }
+
+  .resumeFilterBox > ul > li > button {
+    width: 100%;
+    max-width: 90px;
+  }
+  .resumeFilterBox > span {
+    display: none;
+  }
+}

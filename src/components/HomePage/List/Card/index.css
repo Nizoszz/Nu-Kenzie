@@ -1,0 +1,116 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 87px;
+
+  background: #f8f9fa;
+  border-radius: 4px;
+
+  padding: 11px 28px;
+
+  border-left: 4px solid #03b898;
+
+  cursor: pointer;
+}
+
+.cardDespesa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 87px;
+
+  background: #f8f9fa;
+  border-radius: 4px;
+
+  padding: 11px 28px;
+
+  border-left: 4px solid #e9ecef;
+
+  cursor: pointer;
+}
+
+.card:hover,
+.cardDespesa:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.card > :nth-child(1),
+.cardDespesa > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.card > :nth-child(1) > h3,
+.cardDespesa > :nth-child(1) > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+  height: 39px;
+  width: 337px;
+  line-height: 150%;
+}
+
+.card > :nth-child(1) > span,
+.cardDespesa > :nth-child(1) > span {
+  font-weight: 400;
+  font-size: 12px;
+  height: 27px;
+  width: 62px;
+  line-height: 150%;
+  color: #343a40;
+}
+
+.card > :nth-child(2),
+.cardDespesa > :nth-child(2) {
+  width: 151px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card > :nth-child(2) > span,
+.cardDespesa > :nth-child(2) > span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #212529;
+  line-height: 22px;
+  width: 102px;
+}
+
+.card > :nth-child(2) > button,
+.cardDespesa > :nth-child(2) > button {
+  background-image: url(../../../../assets/img/trash.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 22px;
+  width: 22px;
+  outline: none;
+  background-color: #e9ecef;
+  border-radius: 2.5px;
+  border: 1px solid #e9ecef;
+  cursor: pointer;
+}
+.card > :nth-child(2) > button:hover,
+.cardDespesa > :nth-child(2) > button:hover {
+  background-image: url(../../../../assets/img/trashlight.svg);
+  background-color: #343a40;
+}
+
+@media (max-width: 945px) {
+  .card > :nth-child(1) > h3,
+  .cardDespesa > :nth-child(1) > h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+    height: 39px;
+    line-height: 150%;
+  }
+}
